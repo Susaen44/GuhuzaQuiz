@@ -1,21 +1,21 @@
-Guhuza’s Brain Boost
+***Guhuza’s Brain Boost***
 
 Guhuza’s Brain Boost is an interactive quiz game designed to help users improve their job search skills through fun, competitive gameplay. Players answer job-related questions, earn rewards, compete on leaderboards, and share their achievements on social media.
 
 ---
 
-Features
+***Features***
 
-- Job Search Quiz – Answer career-focused questions to earn points.
-- Leaderboard – Track your ranking against other players.
-- Social Sharing – Share your scores and badges on Facebook, WhatsApp, or Email.
-- Friend Invites – Invite friends via SMS or email.
-- Rewards System – Earn badges for performance milestones and streaks.
-- Mobile-Friendly – Fully responsive design for all devices.
+-***Job Search Quiz*** – Answer career-focused questions to earn points.
+- ***Leaderboard*** – Track your ranking against other players.
+- ***Social Sharing*** – Share your scores and badges on Facebook, WhatsApp, or Email.
+- ***Friend Invites***– Invite friends via SMS or email.
+-***Rewards System*** – Earn badges for performance milestones and streaks.
+- ***Mobile-Friendly*** – Fully responsive design for all devices.
 
 ---
 
-Technologies Used
+***Technologies Used***
 
 - Frontend: React.js, Next.js, TypeScript
 - Backend: MySQL with Prisma ORM
@@ -23,22 +23,21 @@ Technologies Used
 
 ---
 
-Installation (via GitHub)
+***Installation (via GitHub)***
 
 To set up Guhuza’s Brain Boost locally using Git:
 
-1. Clone the Repository
+***1. Clone the Repository***
 
 Open a terminal and run:
 
 git clone https://github.com/Susaen44/GuhuzaQuiz.git
 cd GuhuzaQuiz
 
-(Replace the URL if your repo is private or different.)
 
 ---
 
-2. Install Dependencies
+***2. Install Dependencies***
 
 Make sure you're in the project root directory, then run:
 
@@ -46,7 +45,7 @@ npm install
 
 ---
 
-3. Configure Environment Variables
+***3. Configure Environment Variables***
 
 Create a .env.local file in the root directory:
 
@@ -63,7 +62,7 @@ NEXTAUTH_SECRET=your_application_secret
 
 ---
 
-4. Set Up the Database
+***4. Set Up the Database***
 
 Generate Prisma client and apply migrations:
 
@@ -72,7 +71,7 @@ npx prisma migrate dev
 
 ---
 
-5. Run the Development Server
+***5. Run the Development Server***
 
 Start the app locally:
 
@@ -82,7 +81,7 @@ Open http://localhost:3000 in your browser to see the app.
 
 ---
 
-Notes for Developers
+***Notes for Developers***
 
 - Keep .env.local private.
 - Avoid pushing secrets to the repository.
@@ -90,7 +89,7 @@ Notes for Developers
 
 ---
 
-Contributing
+***Contributing***
 
 - Follow the existing folder structure and code style.
 - Document your changes clearly.
@@ -98,7 +97,7 @@ Contributing
 
 ---
 
-License
+***License***
 
 This project is licensed under the MIT License.
 See the included LICENSE.txt file for details.
