@@ -1,0 +1,51 @@
+{
+  "name": "quiz-app",
+  "version": "0.1.0",
+  "private": true,
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.4",
+    "@prisma/client": "^6.9.0",
+    "@radix-ui/react-progress": "^1.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tabs": "^1.1.12",
+    "bcryptjs": "^3.0.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cookies-next": "^4.3.0",
+    "framer-motion": "^11.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.513.0",
+    "mysql2": "^3.14.1",
+    "next": "^15.3.3",
+    "next-auth": "^5.0.0-beta.25",
+    "nextjs-toploader": "^3.7.15",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.4.0",
+    "react-share-social": "^0.1.60",
+    "resend": "^4.1.2",
+    "tailwind-merge": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "prisma": "^6.9.0",
+    "tailwindcss": "^3.3.0",
+    "tailwindcss-intersect": "^2.0.1",
+    "tailwindcss-motion": "^1.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

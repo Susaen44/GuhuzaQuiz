@@ -1,0 +1,78 @@
+generator client {
+  provider   = "prisma-client-js"
+  engineType = "library"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:Root@localhost:3306/guhuza"
+}
+
+model Reward {
+  id            Int    @id @default(autoincrement())
+  name          String
+  description   String
+  requiredLevel Int
+  image         String
+}
+
+model level {
+  Level_Id     Int      @id @default(autoincrement())
+  Level_Title  String
+  Level_number Int
+  player       player[]
+}
+
+model milestone {
+  Milestone_Id            Int    @id @default(autoincrement())
+  Milestone_Title         String
+  Milestone_description   String
+  UnlockingLevel          Int    @unique
+  Milestone_reward_message String
+  Milestone_Link          String
+  Milestone_Button_CTA    String
+  player                  player[]
+}
+
+model player {
+  Player_ID    Int        @id @default(autoincrement())
+  Player_name  String
+  Playerpoint  Int
+  streak       Int
+  lastLogin    DateTime
+  Level_Id     Int?
+  Milestone_Id Int?
+
+  level        level?     @relation(fields: [Level_Id], references: [Level_Id])
+  milestone    milestone? @relation(fields: [Milestone_Id], references: [Milestone_Id])
+
+  PlayerBadges PlayerBadge[]
+
+  @@index([Level_Id])
+  @@index([Milestone_Id])
+}
+
+// =====================
+// NEW BADGE MODELS BELOW
+// =====================
+
+model Badge {
+  id          String       @id
+  name        String
+  image       String
+  description String
+
+  PlayerBadges PlayerBadge[]
+}
+
+model PlayerBadge {
+  id        Int     @id @default(autoincrement())
+  playerId  Int
+  badgeId   String
+  count     Int     @default(1)
+
+  player    player  @relation(fields: [playerId], references: [Player_ID])
+  badge     Badge   @relation(fields: [badgeId], references: [id])
+
+  @@unique([playerId, badgeId])
+}

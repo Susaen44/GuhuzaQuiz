@@ -1,0 +1,15 @@
+/* AnswerTimer.css */
+.answer-timer-container {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  transition: width 1s linear;
+  border-radius: 4px;
+}
